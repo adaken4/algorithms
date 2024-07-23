@@ -1,4 +1,3 @@
-// sorting/insertion_sort.go
 package sorting
 
 // InsertionSort sorts an array of strings in ascending order using the insertion sort algorithm.
