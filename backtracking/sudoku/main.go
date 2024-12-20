@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	_ "time"
 )
 
 func main() {
@@ -40,8 +39,8 @@ func solve(row, col int, board [][]string) bool {
 	}
 	for val := '1'; val <= '9'; val++ {
 		board[row][col] = string(val)
-		// fmt.Println(board)
-		// time.Sleep(100 * time.Millisecond)
+		// fmt.Println("\033[38;5;22m", board, "\u001b[0m")
+		// time.Sleep(20 * time.Millisecond)
 		if validPlacement(row, col, board) {
 			if solve(row, col+1, board) {
 				return true
